@@ -11,11 +11,11 @@
 <body>
 
 
-<sql:setDataSource var="myds" url="jdbc:oracle:thin:@localhost:1521:xe"
+<%-- <sql:setDataSource var="myds" url="jdbc:oracle:thin:@localhost:1521:xe"
 driver="oracle.jdbc.OracleDriver" user="rinu" password="rinu"/>
+ --%>
 
-
-<sql:query var="rs" dataSource="${myds}"> select * from product</sql:query>
+<sql:query var="rs" dataSource="jdbc/myoracle"> select * from product</sql:query>
 
 <table border="2">
 <tr><th>Code</th><th>Name</th><th>Price</th></tr>
